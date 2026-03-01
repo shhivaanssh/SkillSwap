@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillSwap — Learn from Peers. Teach What You Know.</title>
+  <meta name="description" content="SkillSwap is a peer-to-peer skill learning platform where students teach and learn from each other in real time." />
+
+  <!-- Fonts: Fraunces (display) + Plus Jakarta Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <!-- Brand -->
+      <a href="#" class="nav-brand">
+        <div class="brand-logo">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="10" fill="currentColor" class="logo-bg"/>
+            <path d="M10 22l6-12 6 12" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 18h8" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="brand-name">SkillSwap</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links" id="nav-links">
+        <a href="#discover" class="nav-link">Discover</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#testimonials" class="nav-link">Stories</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <!-- Right Actions -->
+      <div class="nav-right">
+        <!-- Theme Toggle -->
+        <button class="theme-btn" id="theme-toggle" aria-label="Toggle theme" title="Toggle dark mode">
+          <span class="theme-icon sun-icon">
+            <!-- Sun -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <circle cx="12" cy="12" r="5"/>
+              <line x1="12" y1="1" x2="12" y2="3"/>
+              <line x1="12" y1="21" x2="12" y2="23"/>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+              <line x1="1" y1="12" x2="3" y2="12"/>
+              <line x1="21" y1="12" x2="23" y2="12"/>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+          </span>
+          <span class="theme-icon moon-icon">
+            <!-- Moon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </span>
+        </button>
+
+        <a href="#" class="nav-signin">Sign In</a>
+        <a href="#" class="btn-nav-cta">Get Started Free</a>
+
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Open navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#discover" class="mob-link">Discover</a>
+      <a href="#how-it-works" class="mob-link">How It Works</a>
+      <a href="#testimonials" class="mob-link">Stories</a>
+      <a href="#faq" class="mob-link">FAQ</a>
+      <div class="mob-actions">
+        <a href="#" class="nav-signin">Sign In</a>
+        <a href="#" class="btn-nav-cta">Get Started Free</a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ════════════════════════════════════════
+       HERO SECTION
+  ════════════════════════════════════════ -->
+  <section class="hero-section" id="home">
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+
+    <div class="hero-container">
+
+      <!-- Left: Copy -->
+      <div class="hero-copy reveal">
+        <div class="hero-label">
+          <span class="live-dot"></span>
+          1,200+ active learners worldwide
+        </div>
+
+        <h1 class="hero-headline">
+          Learn a skill.<br>
+          Teach what<br>
+          <em>you know.</em>
+        </h1>
+
+        <p class="hero-sub">
+          SkillSwap is where students connect to teach and learn from each other —
+          real-time sessions, zero cost, pure peer-to-peer knowledge exchange.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#" class="btn-hero-primary">
+            Start for Free
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#discover" class="btn-hero-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            Browse Skills
+          </a>
+        </div>
+
+        <div class="hero-trust">
+          <div class="avatars-stack">
+            <div class="av av-1">P</div>
+            <div class="av av-2">J</div>
+            <div class="av av-3">A</div>
+            <div class="av av-4">R</div>
+            <div class="av av-5">+</div>
+          </div>
+          <p class="trust-text"><strong>800+</strong> sessions completed this month</p>
+        </div>
+      </div>
+
+      <!-- Right: Profile Card Mockup -->
+      <div class="hero-visual reveal" style="transition-delay:0.15s;">
+        <!-- Main Profile Card (Topmate-style) -->
+        <div class="profile-card-mock">
+          <div class="pcm-cover"></div>
+          <div class="pcm-body">
+            <div class="pcm-avatar-wrap">
+              <div class="pcm-avatar">P</div>
+              <span class="pcm-verified" title="Verified">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+              </span>
+            </div>
+            <h3 class="pcm-name">Priya Sharma</h3>
+            <p class="pcm-role">Machine Learning · Python</p>
+            <div class="pcm-pills">
+              <span>ML</span><span>Python</span><span>Data Science</span>
+            </div>
+            <div class="pcm-sessions">
+              <!-- Mini session cards -->
+              <div class="pcm-session">
+                <div class="pcm-session-info">
+                  <span class="pcm-session-icon">⚡</span>
+                  <div>
+                    <p class="pcm-session-title">Quick Chat · 30 min</p>
+                    <p class="pcm-session-meta">Intro to Neural Networks</p>
+                  </div>
+                </div>
+                <button class="pcm-book-btn">Swap →</button>
+              </div>
+              <div class="pcm-session">
+                <div class="pcm-session-info">
+                  <span class="pcm-session-icon">🎯</span>
+                  <div>
+                    <p class="pcm-session-title">Deep Dive · 60 min</p>
+                    <p class="pcm-session-meta">PyTorch from Scratch</p>
+                  </div>
+                </div>
+                <button class="pcm-book-btn">Swap →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating stat cards -->
+        <div class="float-chip chip-a">
+          <span>🔥</span>
+          <div>
+            <strong>340+</strong>
+            <small>Skills Listed</small>
+          </div>
+        </div>
+        <div class="float-chip chip-b">
+          <span>⭐</span>
+          <div>
+            <strong>4.97</strong>
+            <small>Avg Rating</small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       TRUST BAR / STATS
+  ════════════════════════════════════════ -->
+  <section class="trust-bar">
+    <div class="trust-container">
+      <div class="trust-stat reveal">
+        <span class="ts-number">1,200+</span>
+        <span class="ts-label">Active Learners</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-stat reveal" style="transition-delay:0.08s">
+        <span class="ts-number">340+</span>
+        <span class="ts-label">Skills Listed</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-stat reveal" style="transition-delay:0.16s">
+        <span class="ts-number">800+</span>
+        <span class="ts-label">Sessions Completed</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-stat reveal" style="transition-delay:0.24s">
+        <span class="ts-number">98%</span>
+        <span class="ts-label">Satisfaction Rate</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-stat reveal" style="transition-delay:0.32s">
+        <span class="ts-number">Free</span>
+        <span class="ts-label">Always</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       DISCOVER SKILLS (Topmate-style cards)
+  ════════════════════════════════════════ -->
+  <section class="section discover-section" id="discover">
+    <div class="section-container">
+
+      <div class="section-head reveal">
+        <span class="section-eyebrow">Discover Skills</span>
+        <h2 class="section-h2">Find your next teacher.<br><em>Become one too.</em></h2>
+        <p class="section-desc">Browse peers ready to share their expertise. Filter by skill, availability, or category.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs reveal">
+        <button class="filter-tab active" data-filter="all">All Skills</button>
+        <button class="filter-tab" data-filter="tech">Tech</button>
+        <button class="filter-tab" data-filter="design">Design</button>
+        <button class="filter-tab" data-filter="language">Languages</button>
+        <button class="filter-tab" data-filter="career">Career</button>
+        <button class="filter-tab" data-filter="creative">Creative</button>
+      </div>
+
+      <!-- Skill Cards Grid -->
+      <div class="skills-grid" id="skills-grid">
+
+        <!-- Card 1 -->
+        <div class="skill-card reveal" data-category="tech" style="transition-delay:0s">
+          <div class="skc-header">
+            <div class="skc-avatar skc-av-1">P</div>
+            <div class="skc-meta">
+              <h4 class="skc-name">Priya Sharma</h4>
+              <span class="skc-uni">IIT Delhi · CS</span>
+            </div>
+            <div class="skc-rating">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" class="star-icon"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              4.98
+            </div>
+          </div>
+          <div class="skc-tags">
+            <span class="skc-tag tag-tech">Machine Learning</span>
+            <span class="skc-tag tag-tech">Python</span>
+          </div>
+          <p class="skc-bio">I teach Python ML from scratch — scikit-learn, PyTorch, and real project walkthroughs.</p>
+          <div class="skc-sessions">
+            <div class="skc-session-row">
+              <span class="session-dot dot-quick"></span>
+              <span class="session-name">Quick Intro · 30 min</span>
+              <span class="session-badge free-badge">Free</span>
+            </div>
+            <div class="skc-session-row">
+              <span class="session-dot dot-deep"></span>
+              <span class="session-name">Deep Dive · 60 min</span>
+              <span class="session-badge swap-badge">Skill Swap</span>
+            </div>
+          </div>
+          <a href="#" class="skc-cta">Book a Swap →</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="skill-card reveal" data-category="design" style="transition-delay:0.07s">
+          <div class="skc-header">
+            <div class="skc-avatar skc-av-2">J</div>
+            <div class="skc-meta">
+              <h4 class="skc-name">Jamie Lee</h4>
+              <span class="skc-uni">UCL · Design</span>
+            </div>
+            <div class="skc-rating">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" class="star-icon"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              5.0
+            </div>
+          </div>
+          <div class="skc-tags">
+            <span class="skc-tag tag-design">UI/UX Design</span>
+            <span class="skc-tag tag-design">Figma</span>
+          </div>
+          <p class="skc-bio">Figma expert and UX researcher. I'll critique your designs and teach you my workflow from wireframe to prototype.</p>
+          <div class="skc-sessions">
+            <div class="skc-session-row">
+              <span class="session-dot dot-quick"></span>
+              <span class="session-name">Portfolio Review · 30 min</span>
+              <span class="session-badge free-badge">Free</span>
+            </div>
+            <div class="skc-session-row">
+              <span class="session-dot dot-deep"></span>
+              <span class="session-name">Figma Workshop · 60 min</span>
+              <span class="session-badge swap-badge">Skill Swap</span>
+            </div>
+          </div>
+          <a href="#" class="skc-cta">Book a Swap →</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="skill-card reveal" data-category="tech" style="transition-delay:0.14s">
+          <div class="skc-header">
+            <div class="skc-avatar skc-av-3">A</div>
+            <div class="skc-meta">
+              <h4 class="skc-name">Alex Kim</h4>
+              <span class="skc-uni">NUS · Software Eng.</span>
+            </div>
+            <div class="skc-rating">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" class="star-icon"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              4.95
+            </div>
+          </div>
+          <div class="skc-tags">
+            <span class="skc-tag tag-tech">React</span>
+            <span class="skc-tag tag-tech">Node.js</span>
+          </div>
+          <p class="skc-bio">Full-stack MERN developer. I teach React hooks, component architecture, and building full apps end to end.</p>
+          <div class="skc-sessions">
+            <div class="skc-session-row">
+              <span class="session-dot dot-quick"></span>
+              <span class="session-name">Code Review · 30 min</span>
+              <span class="session-badge free-badge">Free</span>
+            </div>
+            <div class="skc-session-row">
+              <span class="session-dot dot-deep"></span>
+              <span class="session-name">Full-stack Deep Dive · 60 min</span>
+              <span class="session-badge swap-badge">Skill Swap</span>
+            </div>
+          </div>
+          <a href="#" class="skc-cta">Book a Swap →</a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="skill-card reveal" data-category="language" style="transition-delay:0.21s">
+          <div class="skc-header">
+            <div class="skc-avatar skc-av-4">M</div>
+            <div class="skc-meta">
+              <h4 class="skc-name">Maria Santos</h4>
+              <span class="skc-uni">USP · Linguistics</span>
+            </div>
+            <div class="skc-rating">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" class="star-icon"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              4.99
+            </div>
+          </div>
+          <div class="skc-tags">
+            <span class="skc-tag tag-lang">Portuguese</span>
+            <span class="skc-tag tag-lang">Spanish</span>
+          </div>
+          <p class="skc-bio">Native speaker in Portuguese and Spanish. Conversational practice, grammar deep-dives, and pronunciation coaching.</p>
+          <div class="skc-sessions">
+            <div class="skc-session-row">
+              <span class="session-dot dot-quick"></span>
+              <span class="session-name">Conversation Practice · 30 min</span>
+              <span class="session-badge free-badge">Free</span>
+            </div>
+            <div class="skc-session-row">
+              <span class="session-dot dot-deep"></span>
+              <span class="session-name">Grammar & Fluency · 60 min</span>
+              <span class="session-badge swap-badge">Skill Swap</span>
+            </div>
+          </div>
+          <a href="#" class="skc-cta">Book a Swap →</a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="skill-card reveal" data-category="career" style="transition-delay:0.28s">
+          <div class="skc-header">
+            <div class="skc-avatar skc-av-5">R</div>
+            <div class="skc-meta">
+              <h4 class="skc-name">Rohan Mehta</h4>
+              <span class="skc-uni">IIM · Management</span>
+            </div>
+            <div class="skc-rating">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" class="star-icon"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              4.96
+            </div>
+          </div>
+          <div class="skc-tags">
+            <span class="skc-tag tag-career">Resume Writing</span>
+            <span class="skc-tag tag-career">Interviews</span>
+          </div>
+          <p class="skc-bio">Placement cell head. I help craft ATS-friendly resumes and coach for case interviews and group discussions.</p>
+          <div class="skc-sessions">
+            <div class="skc-session-row">
+              <span class="session-dot dot-quick"></span>
+              <span class="session-name">Resume Feedback · 30 min</span>
+              <span class="session-badge free-badge">Free</span>
+            </div>
+            <div class="skc-session-row">
+              <span class="session-dot dot-deep"></span>
+              <span class="session-name">Mock Interview · 60 min</span>
+              <span class="session-badge swap-badge">Skill Swap</span>
+            </div>
+          </div>
+          <a href="#" class="skc-cta">Book a Swap →</a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="skill-card reveal" data-category="creative" style="transition-delay:0.35s">
+          <div class="skc-header">
+            <div class="skc-avatar skc-av-6">S</div>
+            <div class="skc-meta">
+              <h4 class="skc-name">Sofia Chen</h4>
+              <span class="skc-uni">RISD · Fine Art</span>
+            </div>
+            <div class="skc-rating">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" class="star-icon"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              5.0
+            </div>
+          </div>
+          <div class="skc-tags">
+            <span class="skc-tag tag-creative">Illustration</span>
+            <span class="skc-tag tag-creative">Procreate</span>
+          </div>
+          <p class="skc-bio">Digital illustrator and visual storyteller. I teach Procreate fundamentals, character design, and colour theory.</p>
+          <div class="skc-sessions">
+            <div class="skc-session-row">
+              <span class="session-dot dot-quick"></span>
+              <span class="session-name">Sketch Review · 30 min</span>
+              <span class="session-badge free-badge">Free</span>
+            </div>
+            <div class="skc-session-row">
+              <span class="session-dot dot-deep"></span>
+              <span class="session-name">Illustration Workshop · 60 min</span>
+              <span class="session-badge swap-badge">Skill Swap</span>
+            </div>
+          </div>
+          <a href="#" class="skc-cta">Book a Swap →</a>
+        </div>
+
+      </div>
+
+      <div class="discover-cta reveal">
+        <a href="#" class="btn-outline-lg">View All 340+ Skills →</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       HOW IT WORKS
+  ════════════════════════════════════════ -->
+  <section class="section hiw-section" id="how-it-works">
+    <div class="hiw-blob"></div>
+    <div class="section-container">
+
+      <div class="section-head reveal">
+        <span class="section-eyebrow">How It Works</span>
+        <h2 class="section-h2">Three steps to your<br><em>first skill swap.</em></h2>
+      </div>
+
+      <div class="hiw-grid">
+
+        <div class="hiw-card reveal" style="transition-delay:0s">
+          <div class="hiw-number">01</div>
+          <div class="hiw-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="28" height="28"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h3 class="hiw-title">Create Your Profile</h3>
+          <p class="hiw-desc">Sign up in 60 seconds. List the skills you can teach and the ones you want to learn — no gatekeeping, everyone qualifies.</p>
+        </div>
+
+        <div class="hiw-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+
+        <div class="hiw-card reveal" style="transition-delay:0.12s">
+          <div class="hiw-number">02</div>
+          <div class="hiw-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="28" height="28"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          </div>
+          <h3 class="hiw-title">Discover & Match</h3>
+          <p class="hiw-desc">Browse profiles, filter by skill or availability, and send a swap request. Our smart matcher also suggests compatible peers for you.</p>
+        </div>
+
+        <div class="hiw-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+
+        <div class="hiw-card reveal" style="transition-delay:0.24s">
+          <div class="hiw-number">03</div>
+          <div class="hiw-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="28" height="28"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <h3 class="hiw-title">Learn in Real Time</h3>
+          <p class="hiw-desc">Jump into a live session via our built-in real-time chat and video. Teach, learn, share resources — then rate each other.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       FEATURE HIGHLIGHT — CHAT
+  ════════════════════════════════════════ -->
+  <section class="section chat-section" id="chat-feature">
+    <div class="section-container">
+      <div class="chat-split">
+
+        <!-- Chat mock -->
+        <div class="chat-visual reveal-left">
+          <div class="chat-window">
+            <div class="cw-header">
+              <div class="cw-av">A</div>
+              <div class="cw-info">
+                <strong>Alex Kim</strong>
+                <span class="cw-online">● Live Session</span>
+              </div>
+              <div class="cw-actions">
+                <button class="cw-action-btn" title="Video call">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="16" height="16"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+                </button>
+                <button class="cw-action-btn" title="More options">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="16" height="16"><circle cx="12" cy="5" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                </button>
+              </div>
+            </div>
+            <div class="cw-messages">
+              <div class="msg msg-other">
+                <div class="msg-bubble">Hey! Ready to start the React session? I've prepped some hook examples 🚀</div>
+                <span class="msg-time">3:01 PM</span>
+              </div>
+              <div class="msg msg-self">
+                <div class="msg-bubble">Yes! Let's do it. Should we start with useState vs useReducer?</div>
+                <span class="msg-time">3:02 PM</span>
+              </div>
+              <div class="msg msg-other">
+                <div class="msg-bubble">Perfect. Opening a CodeSandbox now — follow along!</div>
+                <span class="msg-time">3:02 PM</span>
+              </div>
+              <div class="msg msg-self">
+                <div class="msg-bubble">Got it. This is exactly what I needed. In return I'll walk you through my ML notebook after 🤝</div>
+                <span class="msg-time">3:03 PM</span>
+              </div>
+              <!-- Typing indicator -->
+              <div class="msg msg-other">
+                <div class="msg-bubble typing-bubble">
+                  <span class="tdot"></span><span class="tdot"></span><span class="tdot"></span>
+                </div>
+              </div>
+            </div>
+            <div class="cw-input-area">
+              <input type="text" class="cw-input" placeholder="Send a message…" readonly />
+              <button class="cw-send-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="16" height="16"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+              </button>
+            </div>
+          </div>
+          <!-- Swap confirmed chip -->
+          <div class="swap-chip">
+            <span>🔁</span>
+            <div>
+              <strong>Skill Swap Active</strong>
+              <small>React ↔ Machine Learning</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text side -->
+        <div class="chat-text reveal-right">
+          <span class="section-eyebrow">Real-Time Chat</span>
+          <h2 class="chat-h2">Conversations that<br><em>actually teach.</em></h2>
+          <p class="chat-p">Powered by Socket.io — live messaging that feels instant. No third-party tools, no scheduling friction. Start learning the moment you match.</p>
+          <ul class="chat-checklist">
+            <li>
+              <span class="cl-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="13" height="13"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              Real-time delivery via Socket.io
+            </li>
+            <li>
+              <span class="cl-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="13" height="13"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              Live typing indicators & read receipts
+            </li>
+            <li>
+              <span class="cl-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="13" height="13"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              File, link & resource sharing
+            </li>
+            <li>
+              <span class="cl-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="13" height="13"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              Session history saved automatically
+            </li>
+          </ul>
+          <a href="#" class="btn-hero-primary" style="margin-top:2rem;display:inline-flex;">
+            Try It Free →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       TESTIMONIALS
+  ════════════════════════════════════════ -->
+  <section class="section testi-section" id="testimonials">
+    <div class="section-container">
+
+      <div class="section-head reveal">
+        <span class="section-eyebrow">Success Stories</span>
+        <h2 class="section-h2">Real swaps.<br><em>Real results.</em></h2>
+      </div>
+
+      <div class="testi-grid">
+
+        <div class="testi-card reveal" style="transition-delay:0s">
+          <div class="tc-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="tc-quote">"I swapped my Python skills for UI/UX lessons. Two weeks later I had a freelance project worth ₹40k. SkillSwap genuinely changed my trajectory."</p>
+          <div class="tc-author">
+            <div class="tc-av tc-av-1">P</div>
+            <div>
+              <strong class="tc-name">Priya Sharma</strong>
+              <span class="tc-role">CS Student · IIT Delhi</span>
+            </div>
+            <div class="tc-swap-pill">Python ↔ Design</div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal" style="transition-delay:0.1s">
+          <div class="tc-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="tc-quote">"The matching quality blew me away. I needed React help and found someone perfect in under 5 minutes. The chat is super smooth — feels like texting a friend."</p>
+          <div class="tc-author">
+            <div class="tc-av tc-av-2">J</div>
+            <div>
+              <strong class="tc-name">James O'Brien</strong>
+              <span class="tc-role">Design Student · UCL</span>
+            </div>
+            <div class="tc-swap-pill">Design ↔ React</div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal" style="transition-delay:0.2s">
+          <div class="tc-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="tc-quote">"As someone from a non-coding background wanting to learn data science, SkillSwap connected me with patient, brilliant peers. I'm now working on my first ML project."</p>
+          <div class="tc-author">
+            <div class="tc-av tc-av-3">A</div>
+            <div>
+              <strong class="tc-name">Aya Tanaka</strong>
+              <span class="tc-role">Business Student · NUS</span>
+            </div>
+            <div class="tc-swap-pill">Japanese ↔ Data Science</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       FAQ
+  ════════════════════════════════════════ -->
+  <section class="section faq-section" id="faq">
+    <div class="faq-container">
+
+      <div class="section-head reveal">
+        <span class="section-eyebrow">FAQ</span>
+        <h2 class="section-h2">Questions?<br><em>We've got answers.</em></h2>
+      </div>
+
+      <div class="faq-list reveal">
+
+        <div class="faq-item" data-open="false">
+          <button class="faq-q">
+            Is SkillSwap really free?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-a">
+            <p>100% free — no subscriptions, no credits, no fees. SkillSwap is built on the idea that knowledge itself is the currency. You teach, you learn, both sides win.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-open="false">
+          <button class="faq-q">
+            What if I'm a beginner? Can I still teach?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-a">
+            <p>Absolutely. You don't need to be an expert. If you know something another student wants to learn — even at an intermediate level — that's a valid skill to offer. There's always someone who knows less than you.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-open="false">
+          <button class="faq-q">
+            How does the skill matching algorithm work?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-a">
+            <p>Our matcher looks at what you can teach, what you want to learn, your availability, timezone, and past session ratings to suggest the most compatible peers. You can also browse and book directly from any profile.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-open="false">
+          <button class="faq-q">
+            Is the chat actually real-time?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-a">
+            <p>Yes — built on Socket.io. Messages are delivered instantly, with typing indicators and read receipts. Sessions feel like texting a friend, not waiting for emails.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-open="false">
+          <button class="faq-q">
+            Can I list multiple skills?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-a">
+            <p>Yes! You can list as many skills as you want to teach, and add multiple learning goals too. The more you share, the better your match quality.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-open="false">
+          <button class="faq-q">
+            What tech stack powers SkillSwap?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-a">
+            <p>SkillSwap is built on the MERN stack — MongoDB, Express, React, and Node.js — with Socket.io for real-time chat. The frontend is deployed on Netlify and the backend on Render.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       FINAL CTA
+  ════════════════════════════════════════ -->
+  <section class="cta-section">
+    <div class="cta-blob"></div>
+    <div class="cta-inner reveal">
+      <div class="cta-label">
+        <span class="live-dot"></span>
+        Spots available now
+      </div>
+      <h2 class="cta-h2">Your next skill<br><em>is one swap away.</em></h2>
+      <p class="cta-p">Join 1,200+ students already teaching and learning on SkillSwap. Free forever. No catch.</p>
+      <div class="cta-actions">
+        <a href="#" class="btn-hero-primary btn-cta-lg">
+          Create Your Profile
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#discover" class="btn-cta-ghost">Browse Skills</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-brand-col">
+        <a href="#" class="nav-brand footer-brand-link">
+          <div class="brand-logo">
+            <svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="10" fill="currentColor" class="logo-bg"/><path d="M10 22l6-12 6 12" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 18h8" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg>
+          </div>
+          <span class="brand-name">SkillSwap</span>
+        </a>
+        <p class="footer-tagline">Peer-to-peer skill learning.<br>Built with MERN. Free forever.</p>
+        <div class="footer-socials">
+          <a href="#" class="fsoc" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" class="fsoc" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="#" class="fsoc" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-col-title">Platform</h4>
+        <ul>
+          <li><a href="#discover">Discover Skills</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#">Create Profile</a></li>
+          <li><a href="#">Skill Matching</a></li>
+          <li><a href="#">Live Chat</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-col-title">Community</h4>
+        <ul>
+          <li><a href="#testimonials">Success Stories</a></li>
+          <li><a href="#">Leaderboard</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-col-title">Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span class="footer-copy">© <span id="footer-year"></span> SkillSwap. All rights reserved.</span>
+      <span class="footer-copy">Deployed on Netlify &amp; Render</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
